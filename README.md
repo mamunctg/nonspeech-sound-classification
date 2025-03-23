@@ -4,6 +4,11 @@
 
 ### [Nonspeech7k dataset link ](https://zenodo.org/record/6967442)
 
+## Prerequisites
+- Ubuntu
+- Python 3
+- NVIDIA GPU (11G memory or larger) + CUDA cuDNN
+
 ## Citation
 
 If you find this useful for your research, please use the following.
