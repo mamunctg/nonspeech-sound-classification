@@ -1,11 +1,11 @@
 import os
 
-OUTPUT_DIR ='/home/mamun/Documents/nonspeech_code/audiotf/dataset_nonspeech7K/pkl/'
+OUTPUT_DIR ='~/PATH_TO_DATASET/dataset_nonspeech7K/pkl/'
 OUTPUT_DIR_TRAIN = os.path.join(OUTPUT_DIR, 'train')
 OUTPUT_DIR_TEST = os.path.join(OUTPUT_DIR, 'test')
 
 
-TARGET_SR = 8000
+TARGET_SR = 8000   #sampling rate
 AUDIO_LENGTH = 32000
 
 
