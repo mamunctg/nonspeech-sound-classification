@@ -4,9 +4,13 @@
 
 ### [Nonspeech7k dataset link ](https://zenodo.org/record/6967442)
 
-## Accuracy, loss, and feature of the Nonspheech7k dataset
+###  Feature of the Nonspheech7k dataset
 <p align='center'>  
-  <img src='imgs/audio feature.jpg' width='400'/>
+  <img src='imgs/audio feature.jpg' width='400'/> 
+</p>
+
+### Accuracy and loss of the Nonspheech7k dataset
+<p align='center'>    
   <img src='imgs/accuracy.jpg' width='400'/>
 </p>
 
