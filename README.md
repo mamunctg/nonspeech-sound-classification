@@ -22,7 +22,9 @@ cd nonspeech-sound-classification
 -Download the dataset and convert it into '.pkl' from the '.wav' format file
 -set the PATH of the dataset to the constants.py file
 -run
+```
 python model_run.py
+```
 
 ## Citation
 
