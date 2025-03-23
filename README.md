@@ -7,7 +7,16 @@
 ## Prerequisites
 - Ubuntu
 - Python 3
-- NVIDIA GPU (11G memory or larger) + CUDA cuDNN
+- NVIDIA GPU (11G memory or larger) 
+## Getting Started
+### Installation
+- Clone this repo:
+```bash
+git clone https://github.com/mamunctg/nonspeech-sound-classification.git
+cd nonspeech-sound-classification
+
+## Create environment
+- see requirements.txt
 
 ## Citation
 
