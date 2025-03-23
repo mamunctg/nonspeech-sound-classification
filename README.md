@@ -4,6 +4,13 @@
 
 ### [Nonspeech7k dataset link ](https://zenodo.org/record/6967442)
 
+## Image-to-image translation at 2k/1k resolution
+- Our label-to-streetview results
+<p align='center'>  
+  <img src='imgs/teaser_label.png' width='400'/>
+  <img src='imgs/teaser_ours.jpg' width='400'/>
+</p>
+
 ## Prerequisites
 - Ubuntu
 - Python 3
