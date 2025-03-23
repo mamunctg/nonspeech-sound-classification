@@ -11,7 +11,7 @@
 
 ### Accuracy and loss of the Nonspheech7k dataset
 <p align='center'>    
-  <img src='imgs/accuracy.jpg' width='400'/>
+  <img src='imgs/accuracy.jpg' width='700'/>
 </p>
 
 ## Prerequisites
