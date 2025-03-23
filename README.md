@@ -20,8 +20,8 @@ cd nonspeech-sound-classification
 - see requirements.txt
 ### Training and Testing
 - Download the dataset from [Nonspeech7k ](https://zenodo.org/record/6967442) and convert it into '.pkl' from the '.wav' format file
-- set the PATH of the dataset to the constants.py file
--run
+- set the local PATH of the dataset to the constants.py file
+- run
 ```
 python model_run.py
 ```
