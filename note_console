@@ -1,0 +1,435 @@
+/home/mamun/anaconda3/envs/nonspeech/bin/python /home/mamun/Documents/nonspeech_code/audiotf/code-1/model_run.py
+Using TensorFlow backend.
+Using Model M5=ours-2
+2025-03-02 16:12:46.596730: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2025-03-02 16:12:46.682037: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.684887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties:
+name: NVIDIA GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:01:00.0
+2025-03-02 16:12:46.685042: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2025-03-02 16:12:46.685787: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2025-03-02 16:12:46.686522: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2025-03-02 16:12:46.686698: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2025-03-02 16:12:46.687548: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2025-03-02 16:12:46.688259: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2025-03-02 16:12:46.690147: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2025-03-02 16:12:46.690247: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.692583: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.694796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2025-03-02 16:12:46.694943: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2025-03-02 16:12:46.698849: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2995200000 Hz
+2025-03-02 16:12:46.699169: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x61951c4d9e50 executing computations on platform Host. Devices:
+2025-03-02 16:12:46.699182: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2025-03-02 16:12:46.823342: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.824549: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x61951c4cd9e0 executing computations on platform CUDA. Devices:
+2025-03-02 16:12:46.824568: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): NVIDIA GeForce RTX 2080 Ti, Compute Capability 7.5
+2025-03-02 16:12:46.824719: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.825769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties:
+name: NVIDIA GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:01:00.0
+2025-03-02 16:12:46.825807: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2025-03-02 16:12:46.825814: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2025-03-02 16:12:46.825819: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2025-03-02 16:12:46.825825: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2025-03-02 16:12:46.825830: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2025-03-02 16:12:46.825835: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2025-03-02 16:12:46.825841: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2025-03-02 16:12:46.825883: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.826943: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.827923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2025-03-02 16:12:46.827959: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2025-03-02 16:12:46.829026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-03-02 16:12:46.829031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0
+2025-03-02 16:12:46.829034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N
+2025-03-02 16:12:46.829094: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.830323: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1006] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-02 16:12:46.831353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 20400 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv1d_1 (Conv1D)            (None, 16000, 96)         384
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 16000, 96)         384
+_________________________________________________________________
+activation_1 (Activation)    (None, 16000, 96)         0
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 16000, 96)         0
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, 16000, 96)         27744
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 16000, 96)         384
+_________________________________________________________________
+activation_2 (Activation)    (None, 16000, 96)         0
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, 4000, 96)          0
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 4000, 96)          0
+_________________________________________________________________
+conv1d_3 (Conv1D)            (None, 4000, 192)         55488
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 4000, 192)         768
+_________________________________________________________________
+activation_3 (Activation)    (None, 4000, 192)         0
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 4000, 192)         0
+_________________________________________________________________
+conv1d_4 (Conv1D)            (None, 4000, 192)         110784
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 4000, 192)         768
+_________________________________________________________________
+activation_4 (Activation)    (None, 4000, 192)         0
+_________________________________________________________________
+max_pooling1d_2 (MaxPooling1 (None, 1000, 192)         0
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 1000, 192)         0
+_________________________________________________________________
+conv1d_5 (Conv1D)            (None, 1000, 384)         221568
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 1000, 384)         1536
+_________________________________________________________________
+activation_5 (Activation)    (None, 1000, 384)         0
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 1000, 384)         0
+_________________________________________________________________
+conv1d_6 (Conv1D)            (None, 1000, 384)         442752
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 1000, 384)         1536
+_________________________________________________________________
+activation_6 (Activation)    (None, 1000, 384)         0
+_________________________________________________________________
+max_pooling1d_3 (MaxPooling1 (None, 250, 384)          0
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 250, 384)          0
+_________________________________________________________________
+conv1d_7 (Conv1D)            (None, 250, 256)          295168
+_________________________________________________________________
+batch_normalization_7 (Batch (None, 250, 256)          1024
+_________________________________________________________________
+activation_7 (Activation)    (None, 250, 256)          0
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 250, 256)          0
+_________________________________________________________________
+conv1d_8 (Conv1D)            (None, 250, 256)          196864
+_________________________________________________________________
+batch_normalization_8 (Batch (None, 250, 256)          1024
+_________________________________________________________________
+activation_8 (Activation)    (None, 250, 256)          0
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 250, 256)          0
+_________________________________________________________________
+conv1d_9 (Conv1D)            (None, 250, 256)          196864
+_________________________________________________________________
+batch_normalization_9 (Batch (None, 250, 256)          1024
+_________________________________________________________________
+activation_9 (Activation)    (None, 250, 256)          0
+_________________________________________________________________
+max_pooling1d_4 (MaxPooling1 (None, 62, 256)           0
+_________________________________________________________________
+dropout_9 (Dropout)          (None, 62, 256)           0
+_________________________________________________________________
+conv1d_10 (Conv1D)           (None, 62, 512)           393728
+_________________________________________________________________
+batch_normalization_10 (Batc (None, 62, 512)           2048
+_________________________________________________________________
+activation_10 (Activation)   (None, 62, 512)           0
+_________________________________________________________________
+dropout_10 (Dropout)         (None, 62, 512)           0
+_________________________________________________________________
+conv1d_11 (Conv1D)           (None, 62, 512)           786944
+_________________________________________________________________
+batch_normalization_11 (Batc (None, 62, 512)           2048
+_________________________________________________________________
+activation_11 (Activation)   (None, 62, 512)           0
+_________________________________________________________________
+dropout_11 (Dropout)         (None, 62, 512)           0
+_________________________________________________________________
+conv1d_12 (Conv1D)           (None, 62, 512)           786944
+_________________________________________________________________
+batch_normalization_12 (Batc (None, 62, 512)           2048
+_________________________________________________________________
+activation_12 (Activation)   (None, 62, 512)           0
+_________________________________________________________________
+max_pooling1d_5 (MaxPooling1 (None, 15, 512)           0
+_________________________________________________________________
+dropout_12 (Dropout)         (None, 15, 512)           0
+_________________________________________________________________
+lambda_1 (Lambda)            (None, 512)               0
+_________________________________________________________________
+dense_1 (Dense)              (None, 7)                 3591
+=================================================================
+Total params: 3,533,415
+Trainable params: 3,526,119
+Non-trainable params: 7,296
+_________________________________________________________________
+None
+training files = 6289
+testing files = 725
+Train on 6289 samples, validate on 725 samples
+Epoch 1/5
+2025-03-02 16:12:53.669618: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2025-03-02 16:12:53.779314: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+ - 31s - loss: 1.0977 - accuracy: 0.6014 - val_loss: 4.4105 - val_accuracy: 0.0703
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/keras/callbacks/callbacks.py:1042: RuntimeWarning: Reduce LR on plateau conditioned on metric `val_acc` which is not available. Available metrics are: val_loss,val_accuracy,loss,accuracy,lr
+  (self.monitor, ','.join(list(logs.keys()))), RuntimeWarning
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+[[  0   0   2   0   0 158   0]
+ [  0   0   4   0   0  66   0]
+ [  0   0  21   0   0 184   0]
+ [  0   0   6   0   0 134   0]
+ [  0   0   0   0   0  70   0]
+ [  0   0   0   0   0  30   0]
+ [  0   0   0   0   0  50   0]]
+              precision    recall  f1-score   support
+
+      breath       0.00      0.00      0.00       160
+       cough       0.00      0.00      0.00        70
+      crying       0.64      0.10      0.18       205
+       laugh       0.00      0.00      0.00       140
+   screaming       0.00      0.00      0.00        70
+      sneeze       0.04      1.00      0.08        30
+        yawn       0.00      0.00      0.00        50
+
+    accuracy                           0.07       725
+   macro avg       0.10      0.16      0.04       725
+weighted avg       0.18      0.07      0.05       725
+
+Epoch 2/5
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/keras/callbacks/callbacks.py:1042: RuntimeWarning: Reduce LR on plateau conditioned on metric `val_acc` which is not available. Available metrics are: val_loss,val_accuracy,loss,accuracy,lr
+  (self.monitor, ','.join(list(logs.keys()))), RuntimeWarning
+ - 28s - loss: 0.7926 - accuracy: 0.7114 - val_loss: 2.7118 - val_accuracy: 0.2800
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+[[  6  11   5   0   0  56  82]
+ [  0  32  24   0   0   4  10]
+ [  6  19 123   0   0  17  40]
+ [  0  35  84   0   0  15   6]
+ [  4   4   2   0   0   2  58]
+ [  0  14   8   0   0   0   8]
+ [  0   4   2   0   0   2  42]]
+              precision    recall  f1-score   support
+
+      breath       0.38      0.04      0.07       160
+       cough       0.27      0.46      0.34        70
+      crying       0.50      0.60      0.54       205
+       laugh       0.00      0.00      0.00       140
+   screaming       0.00      0.00      0.00        70
+      sneeze       0.00      0.00      0.00        30
+        yawn       0.17      0.84      0.28        50
+
+    accuracy                           0.28       725
+   macro avg       0.19      0.28      0.18       725
+weighted avg       0.26      0.28      0.22       725
+
+Epoch 3/5
+ - 29s - loss: 0.6790 - accuracy: 0.7628 - val_loss: 3.1373 - val_accuracy: 0.3890
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/keras/callbacks/callbacks.py:1042: RuntimeWarning: Reduce LR on plateau conditioned on metric `val_acc` which is not available. Available metrics are: val_loss,val_accuracy,loss,accuracy,lr
+  (self.monitor, ','.join(list(logs.keys()))), RuntimeWarning
+[[ 36   4  36   0   0   2  82]
+ [  0  13  48   0   0   0   9]
+ [  4   1 185   0   0   0  15]
+ [  0   3 134   2   0   0   1]
+ [  2   0  13   1   0   0  54]
+ [  0   3  12   0   0   0  15]
+ [  0   1   3   0   0   0  46]]
+              precision    recall  f1-score   support
+
+      breath       0.86      0.23      0.36       160
+       cough       0.52      0.19      0.27        70
+      crying       0.43      0.90      0.58       205
+       laugh       0.67      0.01      0.03       140
+   screaming       0.00      0.00      0.00        70
+      sneeze       0.00      0.00      0.00        30
+        yawn       0.21      0.92      0.34        50
+
+    accuracy                           0.39       725
+   macro avg       0.38      0.32      0.23       725
+weighted avg       0.50      0.39      0.30       725
+
+Epoch 4/5
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ - 31s - loss: 0.6273 - accuracy: 0.7763 - val_loss: 1.1190 - val_accuracy: 0.6221
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/keras/callbacks/callbacks.py:1042: RuntimeWarning: Reduce LR on plateau conditioned on metric `val_acc` which is not available. Available metrics are: val_loss,val_accuracy,loss,accuracy,lr
+  (self.monitor, ','.join(list(logs.keys()))), RuntimeWarning
+[[103  11   1   5   1   7  32]
+ [  0  57   2   3   0   4   4]
+ [ 17  28 136  17   3   4   0]
+ [  0  18  21 100   0   1   0]
+ [  9   3   7   4  15   5  27]
+ [  0  11   2   2   1  12   2]
+ [  3   9   6   0   0   4  28]]
+              precision    recall  f1-score   support
+
+      breath       0.78      0.64      0.71       160
+       cough       0.42      0.81      0.55        70
+      crying       0.78      0.66      0.72       205
+       laugh       0.76      0.71      0.74       140
+   screaming       0.75      0.21      0.33        70
+      sneeze       0.32      0.40      0.36        30
+        yawn       0.30      0.56      0.39        50
+
+    accuracy                           0.62       725
+   macro avg       0.59      0.57      0.54       725
+weighted avg       0.69      0.62      0.63       725
+
+Epoch 5/5
+ - 29s - loss: 0.5913 - accuracy: 0.7960 - val_loss: 1.1930 - val_accuracy: 0.6083
+/home/mamun/anaconda3/envs/nonspeech/lib/python3.7/site-packages/keras/callbacks/callbacks.py:1042: RuntimeWarning: Reduce LR on plateau conditioned on metric `val_acc` which is not available. Available metrics are: val_loss,val_accuracy,loss,accuracy,lr
+  (self.monitor, ','.join(list(logs.keys()))), RuntimeWarning
+[[ 77   4   2   2  13  30  32]
+ [  2  59   0   0   0   8   1]
+ [  7  40 127   4   8  17   2]
+ [  0  26  34  61   4  15   0]
+ [  0   1   3   0  63   1   2]
+ [  0  14   0   0   1  14   1]
+ [  0   4   2   0   0   4  40]]
+              precision    recall  f1-score   support
+
+      breath       0.90      0.48      0.63       160
+       cough       0.40      0.84      0.54        70
+      crying       0.76      0.62      0.68       205
+       laugh       0.91      0.44      0.59       140
+   screaming       0.71      0.90      0.79        70
+      sneeze       0.16      0.47      0.24        30
+        yawn       0.51      0.80      0.62        50
+
+    accuracy                           0.61       725
+   macro avg       0.62      0.65      0.58       725
+weighted avg       0.74      0.61      0.63       725
+
+Training took: 157 seconds
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv1d_1 (Conv1D)            (None, 16000, 96)         384
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 16000, 96)         384
+_________________________________________________________________
+activation_1 (Activation)    (None, 16000, 96)         0
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 16000, 96)         0
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, 16000, 96)         27744
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 16000, 96)         384
+_________________________________________________________________
+activation_2 (Activation)    (None, 16000, 96)         0
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, 4000, 96)          0
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 4000, 96)          0
+_________________________________________________________________
+conv1d_3 (Conv1D)            (None, 4000, 192)         55488
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 4000, 192)         768
+_________________________________________________________________
+activation_3 (Activation)    (None, 4000, 192)         0
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 4000, 192)         0
+_________________________________________________________________
+conv1d_4 (Conv1D)            (None, 4000, 192)         110784
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 4000, 192)         768
+_________________________________________________________________
+activation_4 (Activation)    (None, 4000, 192)         0
+_________________________________________________________________
+max_pooling1d_2 (MaxPooling1 (None, 1000, 192)         0
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 1000, 192)         0
+_________________________________________________________________
+conv1d_5 (Conv1D)            (None, 1000, 384)         221568
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 1000, 384)         1536
+_________________________________________________________________
+activation_5 (Activation)    (None, 1000, 384)         0
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 1000, 384)         0
+_________________________________________________________________
+conv1d_6 (Conv1D)            (None, 1000, 384)         442752
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 1000, 384)         1536
+_________________________________________________________________
+activation_6 (Activation)    (None, 1000, 384)         0
+_________________________________________________________________
+max_pooling1d_3 (MaxPooling1 (None, 250, 384)          0
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 250, 384)          0
+_________________________________________________________________
+conv1d_7 (Conv1D)            (None, 250, 256)          295168
+_________________________________________________________________
+batch_normalization_7 (Batch (None, 250, 256)          1024
+_________________________________________________________________
+activation_7 (Activation)    (None, 250, 256)          0
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 250, 256)          0
+_________________________________________________________________
+conv1d_8 (Conv1D)            (None, 250, 256)          196864
+_________________________________________________________________
+batch_normalization_8 (Batch (None, 250, 256)          1024
+_________________________________________________________________
+activation_8 (Activation)    (None, 250, 256)          0
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 250, 256)          0
+_________________________________________________________________
+conv1d_9 (Conv1D)            (None, 250, 256)          196864
+_________________________________________________________________
+batch_normalization_9 (Batch (None, 250, 256)          1024
+_________________________________________________________________
+activation_9 (Activation)    (None, 250, 256)          0
+_________________________________________________________________
+max_pooling1d_4 (MaxPooling1 (None, 62, 256)           0
+_________________________________________________________________
+dropout_9 (Dropout)          (None, 62, 256)           0
+_________________________________________________________________
+conv1d_10 (Conv1D)           (None, 62, 512)           393728
+_________________________________________________________________
+batch_normalization_10 (Batc (None, 62, 512)           2048
+_________________________________________________________________
+activation_10 (Activation)   (None, 62, 512)           0
+_________________________________________________________________
+dropout_10 (Dropout)         (None, 62, 512)           0
+_________________________________________________________________
+conv1d_11 (Conv1D)           (None, 62, 512)           786944
+_________________________________________________________________
+batch_normalization_11 (Batc (None, 62, 512)           2048
+_________________________________________________________________
+activation_11 (Activation)   (None, 62, 512)           0
+_________________________________________________________________
+dropout_11 (Dropout)         (None, 62, 512)           0
+_________________________________________________________________
+conv1d_12 (Conv1D)           (None, 62, 512)           786944
+_________________________________________________________________
+batch_normalization_12 (Batc (None, 62, 512)           2048
+_________________________________________________________________
+activation_12 (Activation)   (None, 62, 512)           0
+_________________________________________________________________
+max_pooling1d_5 (MaxPooling1 (None, 15, 512)           0
+_________________________________________________________________
+dropout_12 (Dropout)         (None, 15, 512)           0
+_________________________________________________________________
+lambda_1 (Lambda)            (None, 512)               0
+_________________________________________________________________
+dense_1 (Dense)              (None, 7)                 3591
+=================================================================
+Total params: 3,533,415
+Trainable params: 3,526,119
+Non-trainable params: 7,296
+_________________________________________________________________
+None
+
+Process finished with exit code 0
