@@ -4,11 +4,11 @@
 
 ### [Nonspeech7k dataset link ](https://zenodo.org/record/6967442)
 
-## Image-to-image translation at 2k/1k resolution
-- Our label-to-streetview results
+## Accuracy, loss, and feature of the Nonspheech7k dataset
+
 <p align='center'>  
   <img src='imgs/audio feature.jpg' width='400'/>
-  <img src='imgs/teaser_ours.jpg' width='400'/>
+  <img src='imgs/accuracy.jpg.jpg' width='400'/>
 </p>
 
 ## Prerequisites
