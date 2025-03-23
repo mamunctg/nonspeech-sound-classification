@@ -14,6 +14,7 @@
 ```bash
 git clone https://github.com/mamunctg/nonspeech-sound-classification.git
 cd nonspeech-sound-classification
+```
 
 ## Create environment
 - see requirements.txt
