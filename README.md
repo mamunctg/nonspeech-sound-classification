@@ -24,7 +24,7 @@ If you find this useful for your research, please use the following.
 
 
 ## Acknowledgments
-This code borrows heavily from [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+This code borrows heavily from [Very Deep Convolutional Networks For Raw Waveforms](https://github.com/philipperemy/very-deep-convnets-raw-waveforms).
 
 
 
