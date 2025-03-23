@@ -7,7 +7,7 @@
 ## Image-to-image translation at 2k/1k resolution
 - Our label-to-streetview results
 <p align='center'>  
-  <img src='imgs/teaser_label.png' width='400'/>
+  <img src='imgs/feature.jpg' width='400'/>
   <img src='imgs/teaser_ours.jpg' width='400'/>
 </p>
 
